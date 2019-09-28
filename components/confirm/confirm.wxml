@@ -1,0 +1,9 @@
+<view class="confirm-container" wx:if="{{visible}}">
+  <view class="content">
+    <textarea placeholder="{{placeholder}}" bindinput="listenText"></textarea>
+    <view class="action">
+      <view class="confirm" hover-class="active" bindtap="confirm">确定</view>
+      <view class="cancel" hover-class="active" bindtap="cancel">取消</view>
+    </view>
+  </view>
+</view>

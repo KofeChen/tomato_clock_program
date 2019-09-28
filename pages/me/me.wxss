@@ -1,0 +1,98 @@
+.me-container {
+  height: 100vh;
+  background: #F6F6F6;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 170rpx;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.avatar {
+  width: 110rpx;
+  height: 110rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.name text {
+  padding-top: 15rpx;
+  color: #FE996F;
+  font-size: 24rpx;
+}
+
+.qr::after { border: none; }
+.qr { 
+  background: transparent; 
+  color: #FE996F; 
+  font-size: 24rpx; 
+  text-align: right;
+}
+
+.tab {
+  margin-top: 23rpx;
+  width: 100%;
+  background: #fff;
+}
+
+.tab > view {
+  display: inline-block;
+  padding: 20rpx 0;
+  width: 50%;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.tab > view.hover {
+  opacity: 0.6;
+}
+
+.tab > view.active {
+  color: #FE996F;
+}
+
+.lists {
+  flex: 1;
+  padding: 0 20rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.item {
+  margin-top: 25rpx;
+  padding: 16rpx 40rpx;
+  background: #fff;
+  border: 2rpx solid #F6F6F6;
+  box-shadow: 0rpx 2rpx 8rpx 0rpx rgba(0,0,0,0.10);
+}
+
+.item .time {
+  padding-bottom: 23rpx;
+  display: block;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.item .content {
+  margin-bottom: 16rpx;
+  display: flex;
+  font-size: 28rpx;
+}
+
+.content > view {
+  margin-left: 30rpx;
+}

@@ -1,0 +1,13 @@
+.time-container {
+  background: rgb(240,246,248);
+  height: 100vh;
+}
+
+.clock {
+  padding-top: 205rpx;
+  padding-bottom: 78rpx;
+}
+
+.stop {
+  margin-bottom: 40rpx;
+}

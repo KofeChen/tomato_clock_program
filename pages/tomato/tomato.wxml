@@ -1,0 +1,22 @@
+<view class="time-container">
+  <view class="clock"><t-clock text = "{{time}}" fontSize = "50"></t-clock></view>
+  <view class="stop" wx:if="{{!showAgainBtn}}">
+    <t-button type="change" text="{{stop ? '开始' : '暂停'}}" size="mini"
+    bindtap="stopTimer" 
+    ></t-button></view>
+    <view class="again" wx:if="{{!showAgainBtn}}"><t-button text = "放弃" size="mini"
+    bindtap="showConfirm"
+    ></t-button></view>
+
+  <t-button wx:if="{{showAgainBtn}}" type="change" text="再来一组" size="mini"
+  bindtap="againTimer"
+  ></t-button>
+  
+  <t-confirm visible="{{visible}}" placeholder="放弃理由" 
+  bindconfirm="confirmAbandon" bindcancel="cancelAbandon"
+  ></t-confirm>
+
+  <t-confirm visible="{{finishConfirm}}" placeholder="你完成了..."
+  bindconfirm="confirmFinish" bindcancel="confirmcancel"
+  ></t-confirm>
+</view>

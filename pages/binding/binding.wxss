@@ -1,0 +1,35 @@
+.binding .input-wraper {
+  margin: 77rpx 0 77rpx 55rpx;
+}
+
+.binding .input-wraper input {
+  margin-bottom: 56rpx;
+  padding: 20rpx 35rpx;
+  width: 570rpx;
+  border: 2rpx solid #F6705A;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+}
+
+.binding .title-wraper {
+  position: relative;
+  margin-top: 83rpx;
+  margin-left: 44rpx;
+}
+
+.binding .title-wraper::before {
+  content: '';
+  width: 23%;
+  height: 30%;
+  background: rgb(255,220,207);
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.tips {
+  margin-top: 48rpx;
+  color: #F6705A;
+  font-size: 20rpx;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+<view class="home-container">
+  <scroll-view class="todoList" scroll-y="true">
+    <view class="item" wx:for="{{lists}}" wx:key="item.id" bindtap="finishTodo" data-index="{{index}}">
+      <view class="select {{item.finished && 'active'}}"></view>
+      <text>{{item.text}}</text>
+    </view>
+  </scroll-view>
+  <t-button class="createButton" size="mini" text="创建任务" type="change" bindtap="showConfirm"></t-button>
+  <view class="tomato-wrapper">
+    <navigator class="tomato" url="/pages/tomato/tomato">
+      <t-clock text="点我开始闹钟"></t-clock>
+    </navigator>
+  </view>
+  <t-confirm visible="{{visible}}" placeholder="我完成了什么" 
+  bindconfirm="confirm" bindcancel="hide"></t-confirm>
+</view>

@@ -1,0 +1,26 @@
+<view class="me-container">
+  <view class="header">
+    <open-data class="avatar" type="userAvatarUrl"></open-data>
+    <view class="name">
+      <open-data class="username" type="userNickName"></open-data>
+      <text>绑定PC账号</text>
+    </view>
+    <button class="qr" open-type="contact">问题反馈</button>
+  </view>
+
+  <view class="tab">
+    <view hover-class="hover" class="{{ tab === 'tomato' && 'active' }}" bindtap="changeTab" data-name="tomato">番茄历史</view>
+    <view hover-class="hover" class="{{ tab === 'task' && 'active' }}" bindtap="changeTab" data-name="task">我完成的任务</view>
+  </view>
+
+  <scroll-view scroll-y="true" class="lists">
+    <view class="item" wx:for="{{list}}" wx:for-index="key" wx:key="index">
+      <text class="time">{{key}}</text>
+      <view class="content" wx:for="{{item}}" wx:for-index="index" wx:key="key">
+        <text>{{item.time}}</text>
+        <view>{{item.text}}</view>
+      </view>
+    </view>
+  </scroll-view>
+  
+</view>
